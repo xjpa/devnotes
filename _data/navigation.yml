@@ -1,0 +1,9 @@
+links:
+  - title: Notes
+    url: /devnotes
+  - title: About
+    url: /devnotes/about
+  - title: Tags
+    url: /devnotes/tags
+  - title: Rss
+    url: /devnotes/atom.xml

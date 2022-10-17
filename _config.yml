@@ -1,0 +1,59 @@
+site: devnotes
+url: https://chadoverfl0w.github.io/
+title:
+description: some of my notes from dev talks and conferences
+twitter:
+  username:
+  card: summary
+  creator:
+author:
+  twitter:
+  name:
+  avatar:
+  email:
+  url:
+permalink: pretty
+
+baseurl: '/devnotes/'
+
+highlighter: none
+
+exclude:
+  - .jekyll-cache
+
+compress_html:
+  clippings: all
+  comments: ['<!-- ', ' -->']
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'default'
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
